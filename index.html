@@ -4,18 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>V-Card</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS link -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2841; /* Changed background color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: #fff; /* Changed card background color */
+    border-radius: 20px; /* Slightly reduced border radius for a more modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adjusted box shadow for better depth */
+    padding: 30px; /* Increased padding for better spacing */
+    text-align: center;
+  }
+
+  .card img {
+    width: 200px;
+    height: 200px; /* Adjusted image size for better proportion */
+    border-radius: 50%; /* Circular border radius for a nicer profile picture */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+  }
+
+  .card h2 {
+    margin: 10px 0; /* Adjusted heading margin for better spacing */
+    color: #333;
+    font-size: 24px; /* Increased font size for the name */
+  }
+
+  .card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px; /* Increased font size for other text */
+  }
+
+  .card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  .icon {
+    color: #007bff; /* Icon color */
+    margin-right: 5px; /* Adjusted margin for better spacing */
+  }
+
+  /* Styling for social icons */
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #007bff;
+    font-size: 24px;
+  }
+
+  .social-icons a:hover {
+    text-decoration: none;
+    color: #0056b3; /* Darken color on hover */
+  }
+</style>
 
 </head>
 <body>
 
 <div class="card">
   <img src="me.jpg" alt="Profile Picture">
-  <h2> Babayan</h2>
-  <p>Web Developer</p>
-  <p>Email:hovsepbabayan1@mail.ru</p>
-  <p>Phone: +37477958827</p>
-  <p>Website: <a href="https://www.example.com">www.example.com</a></p>
+  <h2><i class="fas fa-user icon"></i>Hovsep Babayan</h2>
+  <p><i class="fas fa-code icon"></i>Web Developer</p>
+  <p><i class="fas fa-envelope icon"></i>Email: hovsepbabayan1@mail.ru</p>
+  <p><i class="fas fa-phone icon"></i>Phone: +37477958827</p>
+  <p><i class="fas fa-globe icon"></i>Website: <a href="https://www.example.com">www.example.com</a></p>
+  <h2>Follow Me On Social Pages</h2>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/hos02001/hos02001.github.io"><i class="fab fa-github"></i></a>
+    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+  </div>
 </div>
 
 <script>
